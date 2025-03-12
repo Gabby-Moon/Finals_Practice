@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add Workout</title>
+
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    
+    <div>
+        <form action="summary" method="post" id="workout-form">
+            <h1>Personal Fitness Tracker</h1>
+            <legend>Workout Type:</legend>
+            <label>
+            <select name="workout-type" id="workout-type">
+                <option value="running">Running</option>
+                <option value="weightlifting">Weightlifting</option>
+                <option value="yoga">Yoga</option>
+                <option value="cycling">Cycling</option>
+                <option value="other">Other</option>
+            </select>
+            </label>
+
+            <legend>Duration (minutes):</legend>
+            <label>
+                <input type="text" name="duration" id="duration">
+            </label>
+            
+            <legend>Intensity Level:</legend>
+            <label>
+                <input type="radio" name="intensity" value="low">Low
+            </label>
+            <label>
+                <input type="radio" name="intensity" value="medium">Medium
+            </label>
+            <label>
+                <input type="radio" name="intensity" value="high">High
+            </label>
+
+            <legend>Date:</legend>
+            <label>
+                <input type="date" name="date" id="date">
+            </label>
+
+            <legend>Notes:</legend>
+            <label>
+                <input type="content" name="notes" id="notes">
+            </label>
+            
+            <button type="submit" class="submit">Log Workout</button>
+        </form>
+    </div>
 </body>
 </html>
