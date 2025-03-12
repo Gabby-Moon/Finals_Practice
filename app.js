@@ -14,10 +14,15 @@ app.get('/', (req, res) => {
 
 app.post('/summary', (req, res) => {
     const workout = {
-
+        workoutType: req.body.workoutType,
+        duration: req.body.duration,
+        intensity: req.body.intensity,
+        workoutDate: req.body.date,
+        notes: req.body.notes
     };
     workouts.push(workout);
-    res.render('summary', workouts);
+    console.log(workouts);
+    res.render('summary', { workouts });
 });
 
 app.listen(PORT, () => {
