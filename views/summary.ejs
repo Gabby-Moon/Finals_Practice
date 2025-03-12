@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Workouts</title>
 
+    <!-- styles -->
     <link rel="stylesheet" href="/styles/styles.css" defer>
+    <!-- scripts -->
     <script src="/scripts/buttons.js" defer></script>
 </head>
 <body>
     <div>
     <h1>Workout Summary</h1>
+    <!-- goes through the entirety of the list of recorded workouts -->
     <% for (let i = 0; i < workouts.length; i++) { %>
         <h2>Logged Workout</h2>
         <p>Workout Type: <%= workouts[i].workoutType %></p>
@@ -22,6 +25,7 @@
     <% } %>
 
     </div>
+    <!-- button to go back to the home page -->
     <button type="button" id="to-home">Log Another Workout</button>
 </body>
 </html>

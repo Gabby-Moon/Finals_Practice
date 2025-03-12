@@ -1,3 +1,4 @@
+/* background color for page */
 body {
     background-color: aliceblue;
 }
@@ -12,6 +13,7 @@ body {
     width: 50%;
 }
 
+/* changes color upon hovering over it */
 .submit:hover {
     background: green;
     color: whitesmoke;
@@ -28,11 +30,13 @@ body {
     padding: 10px;
 }
 
+/* changes color upon hovering over it */
 #to-home:hover {
     background: rgb(0, 149, 255);
     color: whitesmoke;
 }
 
+/* Styling for the form and summary information */
 #form-container, div {
     width: 50%;
     background: white;
